@@ -127,19 +127,12 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Tools',
-          items: [
-            {
-              label: 'Tool',
-              to: '/tool',
-            },
-
-          ],
-        },
-        {
           title: 'Community',
           items: [
-
+            {
+              label: 'Nano Js',
+              href: 'https://nanojs.net',
+            }
           ],
         },
         {
