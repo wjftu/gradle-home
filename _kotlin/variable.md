@@ -113,6 +113,18 @@ Summary
 | `Boolean`   | `boolean`           |
 | `Char`      | `char`              |
 
+Kotlin uses conversion function to convert primitive type.
+
+```kotlin
+val x: Int = 100
+val y: Long = x.toLong()
+val z: Double = y.toDouble()
+val pi: Double = 3.14
+val piInt = pi.toInt() // 3
+
+val c: Char = 'A'
+val ascii: Int = c.code
+```
 
 ### Kotlin Reference Types
 
@@ -155,6 +167,18 @@ println(a == b)  // true (same content)
 val x = String(charArrayOf('K', 'o', 't', 'l', 'i', 'n'))
 println(a === x) // false (different object)
 println(a == x)  // true (same content)
+```
+
+Object Casting
+
+```kotlin
+val obj: Any = "Hello"
+val str: String = obj as String  // casting
+
+if (obj is String) {
+    println(obj.length)  // smart casting
+}
+
 ```
 
 Summary

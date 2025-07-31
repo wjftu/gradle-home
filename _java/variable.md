@@ -87,6 +87,56 @@ List<Integer> list = new ArrayList<>();
 list.add(10); // primitive 10 is autoboxed to Integer
 ```
 
+### Casting of Primitive
+
+Widening (Implicit Casting):
+
+Smaller data type can be casted to larger one automatically and implicitly. Widening is safe and automatic.
+
+```
+byte → short → int → long → float → double
+        ↑
+       char
+```
+
+```java
+byte b = 10;
+int i = b;  
+double d = b;  
+long l = i;
+
+char ch = 'B';
+int ascii = ch;      // 66
+```
+
+Narrowing (Explicit Casting):
+
+In contrary, larger data type can be explicitly cast to smaller data type, this may cause data loss or overflow.
+
+```java
+short s = 130;
+byte b = (byte) s;  // Overflow: 130 → -126
+
+int i = 65;
+char c = (char) i;   // A
+
+int i1 = (int) 1.2f;
+int i2 = (int) 2.3d;
+int i3 = (int) 34L;
+float f1 = (float) 3.14;
+byte b1 = (byte)
+```
+
+boolean cannot be cast to or from any other primitive type.
+
+When you do arithmetic with mixed types, the smaller type is promoted to the largest type in the expression.
+
+```java
+int i = 10;
+double d = 5.5;
+double result = i + d;   // int → double
+```
+
 ### Reference Types
 
 Reference types store references to objects instead of raw values.
