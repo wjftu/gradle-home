@@ -99,6 +99,15 @@ const config: Config = {
         sidebarPath: './sidebars.ts',
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'springboot3', 
+        path: '_springboot3',
+        routeBasePath: 'springboot3',
+        sidebarPath: './sidebars.ts',
+      },
+    ],
   ],
 
   themeConfig: {

@@ -42,6 +42,16 @@ const FeatureList: FeatureItem[] = [
         Clean and annotated algorithms problem solutions.
       </>
     ),
+  },
+  {
+    title: 'Spring Boot 3',
+    imgPath: '/img/spring.png',
+    url: '/springboot3',
+    description: (
+      <>
+        Spring Boot is a powerful and widely used open-source Java fromework that simplifies the development of Java applications.
+      </>
+    ),
   }
 ];
 
