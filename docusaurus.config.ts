@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Gradle Home',
   tagline: 'Explore the World of JVM Languages',
-  favicon: 'img/favicon.ico',
+  favicon: 'favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -117,7 +117,7 @@ const config: Config = {
       title: 'GRADLE HOME',
       logo: {
         alt: 'Gradle Home',
-        src: 'img/favicon.ico',
+        src: 'favicon.ico',
       },
       items: [
 
