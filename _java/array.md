@@ -148,7 +148,20 @@ Arrays.setAll(nums, i -> i + 1);  / [8, 8, 8];
 ```
 
 
+`Arrays.sort(int[])` and `Arrays.sort(double[])` only work for primitive arrays and always sort in ascending order. You can convert them to wrapper type to sort in descending order.
 
+```java
+int[] arr = {5, 2, 8, 1, 9};
+Integer[] integerArr = Arrays.stream(arr).boxed().toArray(Integer[]::new);
+Arrays.sort(integerArr, Comparator.reverseOrder());
+
+// Stream API
+arr = Arrays.stream(arr)
+        .boxed()
+        .sorted(Collections.reverseOrder())
+        .mapToInt(Integer::intValue)
+        .toArray();
+```
 
 
 

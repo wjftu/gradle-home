@@ -148,6 +148,7 @@ println(nums.average())      // 2.5
 nums.sort()
 println(nums.joinToString()) // 1, 2, 3, 4
 val desc = arr.sortedArrayDescending() // 4, 3, 2, 1
+desc.sortDescending() // sort array in place
 
 println(nums.contains(3))    // true
 
